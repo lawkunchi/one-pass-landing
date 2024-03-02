@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Header from "./components/navigation/Header";
 import HomeBanner from "./components/banners/HomeBanner";
-import { Box, Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import TitleHeading from "./components/text/TitleHeading";
 import PricingCard from "./components/cards/PricingCard";
 import QuizCard from "./components/cards/QuizCard";

@@ -26,7 +26,6 @@ const HomeBanner: FC = () => {
           left="-30px"
           top="20%"
           transform="perspective(1200px) rotate(-11deg)"
-          variant="homeBannerLeftImage"
           width="200px"
           src="https://framerusercontent.com/images/c6ekyYWahKBl8OxmtaNBAx6SU.jpg?scale-down-to=1024"
         />

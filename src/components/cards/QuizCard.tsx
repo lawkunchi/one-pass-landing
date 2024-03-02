@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Box, Heading, Text, Button, Image } from "@chakra-ui/react";
 import { MdOutlineWatchLater } from "react-icons/md";
 
-const QuizCard = () => {
+const QuizCard:FC = () => {
   return (
     <Box
       border="2px solid #fff"

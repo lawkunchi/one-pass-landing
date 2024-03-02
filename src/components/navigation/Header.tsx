@@ -8,7 +8,6 @@ import {
   MenuList,
   MenuItem,
   ButtonGroup,
-  Image,
   Text,
   Link,
 } from "@chakra-ui/react";
