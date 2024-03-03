@@ -7,32 +7,29 @@ const Header: FC = () => {
     <Box bg="#fff" minH="80px" borderBottom="1px solid green">
       <Flex justifyContent="space-between" padding="20px" alignItems="center">
         <Box>
-          <Flex gap={4}>
-            <Link variant="menuItem" href="/">
-              Home
-            </Link>
+          <Link href="/">
+            <Image w="150px" src={Logo} alt="One Pass" />
+          </Link>
+        </Box>
+
+        <Box>
+          <Flex gap={4} alignItems="center">
             <Link variant="menuItem" href="#about-us">
               About Us
             </Link>
             <Link variant="menuItem" href="#memberships">
               Memberships
             </Link>
+            <ButtonGroup gap="4">
+              <Button
+                variant="primary"
+                as={Link}
+                href="https://form.jotform.com/240624052150543"
+              >
+                Get Started
+              </Button>
+            </ButtonGroup>
           </Flex>
-        </Box>
-
-        <Box>
-          <Image w="150px" src={Logo} alt="One Pass" />
-        </Box>
-        <Box>
-          <ButtonGroup gap="4">
-            <Button
-              variant="primary"
-              as={Link}
-              href="https://form.jotform.com/240624052150543"
-            >
-              Get Started
-            </Button>
-          </ButtonGroup>
         </Box>
       </Flex>
     </Box>
