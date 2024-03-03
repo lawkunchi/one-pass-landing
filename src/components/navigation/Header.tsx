@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Flex, Box, Button, ButtonGroup, Link, Image } from "@chakra-ui/react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.jpg";
 
 const Header: FC = () => {
   return (

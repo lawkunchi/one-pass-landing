@@ -10,9 +10,8 @@ import {
   Button,
   LinkProps,
 } from "@chakra-ui/react";
-// Here we have used react-icons package for the icons
 
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.jpg";
 
 const Footer = () => {
   const year = new Date().getFullYear();
