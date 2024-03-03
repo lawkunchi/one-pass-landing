@@ -1,8 +1,8 @@
 import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
 
 const primary = defineStyle({
-  background: "lightGreen",
-  color: "green",
+  background: "green",
+  color: "#fff",
 });
 
 const outline = defineStyle({

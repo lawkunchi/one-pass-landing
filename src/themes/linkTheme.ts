@@ -12,7 +12,7 @@ const baseStyle = defineStyle({
 
 const menuItem = defineStyle({
   fontSize: "14px",
-  color: "white",
+  color: "green",
 });
 
 const noTextDecoration = defineStyle({

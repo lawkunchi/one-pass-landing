@@ -16,7 +16,7 @@ const HomeBanner: FC = () => {
       justifyContent="space-between"
       alignItems="center"
       height="85vh"
-      bg="green"
+      bg="#fff"
       overflow="hidden"
     >
       <Box position="relative" width="200px" height="100%">
@@ -30,24 +30,30 @@ const HomeBanner: FC = () => {
           src="https://framerusercontent.com/images/c6ekyYWahKBl8OxmtaNBAx6SU.jpg?scale-down-to=1024"
         />
       </Box>
-      <Box textAlign="center" maxWidth="700px">
-        <Text variant="italic" mb="20px">
-          Welcome to Links Golf Club ~
+      <Box textAlign="center" maxWidth="800px">
+        <Text variant="italic" mb="20px" color="green">
+          Welcome to OnePass Golf Club
         </Text>
-        <Heading variant="display" mb="20px" lineHeight={0.9}>
-          Private golf for everyone.
+        <Heading variant="display" mb="20px" lineHeight={1} color="green">
+          Experience Prestigious Golf Clubs Worldwide with OnePass
         </Heading>
-        <Text mb="20px">
-          Join Links for a fraction of what a traditional private club costs,
-          and access 1100+ courses around the world.
+        <Text mb="20px" color="green">
+          Your Gateway to Seamless Golfing Experiences
         </Text>
-        <Button variant="primary" size="xl" mb="20px">
-          Get Started
+        <Button
+          variant="primary"
+          size="xl"
+          mb="20px"
+          as={Link}
+          href="https://form.jotform.com/240624052150543"
+        >
+          Join Now
         </Button>
         <br />
         <br />
         <Link
-          href="#links-vs-private"
+          color="green"
+          href="#memberships"
           variant="noTextDecoration"
           style={{
             display: "inline-flex",
@@ -58,7 +64,7 @@ const HomeBanner: FC = () => {
           <BsArrowDownCircle
             style={{
               display: "inline-block",
-              color: "#C4FF40",
+              color: "#16331f",
               width: "20px",
               height: "20px",
             }}

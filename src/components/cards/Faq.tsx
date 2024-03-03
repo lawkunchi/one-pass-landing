@@ -3,51 +3,51 @@ import {
   Box,
   Accordion,
   AccordionItem,
-  AccordionIcon,
   AccordionButton,
   AccordionPanel,
-  Heading,
 } from "@chakra-ui/react";
+import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 const Faq: FC = () => {
-  return (
-    <Box width="80%" margin="0 auto" mt="20px">
-      <Heading fontSize="34px" color="green" textAlign="center">
-        Frequently asked questions.
-      </Heading>
-      <Accordion>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
-                Section 1 title
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
+  const faqs = [
+    {
+      heading: "One Pass Access",
+      text: "Gain access to a diverse portfolio of partner courses around the globe with just one pass.",
+    },
 
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
-                Section 2 title
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </AccordionPanel>
-        </AccordionItem>
+    {
+      heading: "Virtual Clubhouse",
+      text: "Connect with fellow golfers, share tips and experiences, and stay updated on club events in our vibrant virtual clubhouse.",
+    },
+
+    {
+      heading: " Premium Amenities",
+      text: " Enjoy exclusive perks and services, including personalized coaching, recommendations for golf getaways, and expert advice from ourdedicated support team..",
+    },
+  ];
+  return (
+    <Box width="50%" margin="0 auto" mt="20px">
+      <Accordion>
+        {faqs.map((item) => (
+          <AccordionItem key={item.heading}>
+            {({ isExpanded }) => (
+              <>
+                <h2>
+                  <AccordionButton>
+                    <Box as="span" flex="1" textAlign="left">
+                      {item.heading}
+                    </Box>
+                    {isExpanded ? (
+                      <MinusIcon fontSize="22px" />
+                    ) : (
+                      <AddIcon fontSize="22px" />
+                    )}
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>{item.text}</AccordionPanel>
+              </>
+            )}
+          </AccordionItem>
+        ))}
       </Accordion>
     </Box>
   );

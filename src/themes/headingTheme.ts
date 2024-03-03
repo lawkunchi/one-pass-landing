@@ -7,8 +7,8 @@ const baseStyle = defineStyle({
 });
 
 const display = defineStyle({
-  fontSize: "96px",
-  lineHeight: "1 !important",
+  fontSize: "76px",
+  lineHeight: "1.3 !important",
   color: "#fff",
 });
 

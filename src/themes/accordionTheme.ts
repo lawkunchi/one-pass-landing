@@ -7,27 +7,44 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   // define the part you're going to style
   root: {
-    border: "1px solid #16331f",
+    border: "none",
   },
   panel: {
     color: "green",
     border: "none",
+    fontSize: "18px",
+    fontFamily: "GT Alpina Regular",
+    _focus: {
+      border: "none",
+    },
   },
 
   container: {
     color: "green", // change the backgroundColor of the container
     border: "none",
     _focus: {
-        border: "none",
-      },
+      border: "0 !important",
+    },
   },
 
   button: {
     color: "green",
+    fontSize: "21px",
     border: "none",
-    _focus: {
-      border: "none",
+    _expanded: {
+      backgroundColor: "green",
+      color: "#fff",
+      border: "none"
     },
+
+    _hover: {
+      backgroundColor: "#fff",
+    },
+  },
+
+  icon: {
+    color: "green",
+    fontSize: "22px",
   },
 });
 

@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Box, Heading, Text, Button, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Image, Link } from "@chakra-ui/react";
 import { MdOutlineWatchLater } from "react-icons/md";
 
-const QuizCard:FC = () => {
+const QuizCard: FC = () => {
   return (
     <Box
       border="2px solid #fff"
@@ -14,16 +14,15 @@ const QuizCard:FC = () => {
       mt="180px"
       px={10}
       position="relative"
-      pb="60px"	
+      pb="60px"
     >
       <Box maxW="60%">
         <Heading mb="20px" color="#fff">
-          Wondering if Links Golf Club is for you?
+          Join OnePass Golf Club Today
         </Heading>
-        <Text mb="20px" color="#fff">
-          By sharing just a little information, we’ll create a customized offer
-          that shows you which courses are available near you and how the
-          membership works
+        <Text mb="20px" color="#fff" lineHeight={8}>
+          Join us today and unlock a world of golfing possibilities with just
+          one pass. Welcome to the club. Welcome to OnePass Golf Club.
         </Text>
         <Text
           mb="20px"
@@ -41,7 +40,13 @@ const QuizCard:FC = () => {
           Takes less than 1 minute
         </Text>
         <br />
-        <Button variant="primary" size="xl" mb="20px">
+        <Button
+          variant="primary"
+          size="xl"
+          mb="20px"
+          as={Link}
+          href="https://form.jotform.com/240624052150543"
+        >
           Get Started
         </Button>
       </Box>
