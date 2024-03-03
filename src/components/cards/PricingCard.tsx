@@ -8,7 +8,7 @@ import {
   Tr,
   Th,
 } from "@chakra-ui/react";
-import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
+import { CheckIcon } from "@chakra-ui/icons";
 const PricingCard: FC = () => {
   return (
     <TableContainer maxWidth="50%" margin="0 auto" py="60px">

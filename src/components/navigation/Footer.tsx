@@ -34,7 +34,6 @@ const Footer = () => {
           </Box>
           <HStack
             spacing={4}
-            d={{ base: "none", sm: "flex" }}
             justifyContent={{ sm: "space-between", md: "normal" }}
           >
             <VStack spacing={4} alignItems="flex-start">
