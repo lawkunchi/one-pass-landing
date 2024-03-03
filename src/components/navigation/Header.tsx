@@ -1,5 +1,13 @@
 import { FC } from "react";
-import { Flex, Box, Button, ButtonGroup, Link, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Button,
+  ButtonGroup,
+  Link,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import Logo from "../../assets/logo.jpg";
 
 const Header: FC = () => {
@@ -7,9 +15,12 @@ const Header: FC = () => {
     <Box bg="#fff" minH="80px" borderBottom="1px solid green">
       <Flex justifyContent="space-between" padding="20px" alignItems="center">
         <Box>
-          <Link href="/">
-            <Image w="150px" src={Logo} alt="One Pass" />
-          </Link>
+          <Flex alignItems="center">
+            <Link href="/">
+              <Image w="100px" src={Logo} alt="One Pass" />
+            </Link>
+            <Text color="green" fontSize="22px"> One Pass Golf</Text>
+          </Flex>
         </Box>
 
         <Box>

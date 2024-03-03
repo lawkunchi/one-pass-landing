@@ -9,6 +9,7 @@ import {
   Text,
   Button,
   LinkProps,
+  Flex
 } from "@chakra-ui/react";
 
 import Logo from "../../assets/logo.jpg";
@@ -24,12 +25,15 @@ const Footer = () => {
           direction={{ base: "column", md: "row" }}
         >
           <Box maxW="300px">
-            <Link href="/" isExternal>
-              <Image w="150px" src={Logo} alt="One Pass" />
-            </Link>
-            <Text mt={2} fontSize="md">
-              One Pass Golf.
-            </Text>
+            <Flex alignItems="center" gap={2}>
+              <Link href="/">
+                <Image w="100px" src={Logo} alt="One Pass" />
+              </Link>
+              <Text color="#fff" fontSize="22px">
+                {" "}
+                One Pass Golf
+              </Text>
+            </Flex>
           </Box>
           <HStack
             spacing={4}
@@ -72,11 +76,7 @@ const Footer = () => {
 
 const CustomLink = ({ children, ...props }: LinkProps) => {
   return (
-    <Link
-      href=""
-      fontSize="sm"
-      {...props}
-    >
+    <Link href="" fontSize="sm" {...props}>
       {children}
     </Link>
   );
