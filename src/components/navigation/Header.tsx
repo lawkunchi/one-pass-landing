@@ -6,7 +6,6 @@ import {
   ButtonGroup,
   Link,
   Image,
-  Text,
 } from "@chakra-ui/react";
 import Logo from "../../assets/images/logo.png";
 
