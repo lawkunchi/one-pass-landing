@@ -1,7 +1,15 @@
 import { FC } from "react";
-import { Box, Heading, Text, Button, Image, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Button,
+  Image,
+  Link,
+} from "@chakra-ui/react";
 import { MdOutlineWatchLater } from "react-icons/md";
-
+import Banner from "../../assets/images/quiz2.jpg";
 const QuizCard: FC = () => {
   return (
     <Box
@@ -10,53 +18,48 @@ const QuizCard: FC = () => {
       minH="300px"
       maxWidth="80%"
       margin="0 auto"
-      pt="60px"
       mt="180px"
-      px={10}
+      pl={10}
       position="relative"
-      pb="60px"
+      pb="0"
     >
-      <Box maxW="60%">
-        <Heading mb="20px" color="#fff">
-          Join OnePass Golf Club Today
-        </Heading>
-        <Text mb="20px" color="#fff" lineHeight={8}>
-          Join us today and unlock a world of golfing possibilities with just
-          one pass. Welcome to the club. Welcome to OnePass Golf Club.
-        </Text>
-        <Text
-          mb="20px"
-          color="#fff"
-          style={{
-            display: "inline-flex",
-            gap: "10px",
-          }}
-        >
-          <MdOutlineWatchLater
+      <Flex alignItems="center">
+        <Box maxW="60%">
+          <Heading mb="20px" color="#fff">
+            Join OnePass Golf Club Today
+          </Heading>
+          <Text mb="20px" color="#fff" lineHeight={8}>
+            Join us today and unlock a world of golfing possibilities with just
+            onepass. Welcome to the club. Welcome to OnePass Golf Club.
+          </Text>
+          <Text
+            mb="20px"
+            color="#fff"
             style={{
-              color: "#C4FF40",
+              display: "inline-flex",
+              gap: "10px",
             }}
-          />{" "}
-          Takes less than 1 minute
-        </Text>
-        <br />
-        <Button
-          variant="primary"
-          size="xl"
-          mb="20px"
-          as={Link}
-          href="https://form.jotform.com/240624052150543"
-        >
-          Get Started
-        </Button>
-      </Box>
-      <Image
-        position="absolute"
-        right="0"
-        bottom="-60px"
-        width="550px"
-        src="https://framerusercontent.com/images/o54IV1m4KR7ZUffjGWPXJpg1w0Q.png"
-      />
+          >
+            <MdOutlineWatchLater
+              style={{
+                color: "#C4FF40",
+              }}
+            />{" "}
+            Takes less than 1 minute
+          </Text>
+          <br />
+          <Button
+            variant="primary"
+            size="xl"
+            mb="20px"
+            as={Link}
+            href="https://form.jotform.com/240624052150543"
+          >
+            Get Started
+          </Button>
+        </Box>
+        <Image width="550px" borderRadius="10px" src={Banner} />
+      </Flex>
     </Box>
   );
 };

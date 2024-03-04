@@ -17,18 +17,18 @@ const App: FC = () => {
         <TitleHeading
           text="MEMBERSHIPS BENEFITS"
           heading="Gain access to a diverse portfolio of partner courses around the globe with
-          just one pass."
+          just onepass."
         />
         <PricingCard />
       </Box>
 
       <Box bg="#fff" py="60px" id="about-us">
-        <TitleHeading theme="green" heading="One Pass" text="" />
+        <TitleHeading theme="green" heading="OnePass" text="" />
         <TitleHeading theme="green" text="About Us" heading="" />
         <Box width="50%" margin="0 auto">
           <Text color="green" textAlign="center" mb="5">
             At OnePass Golf Club, we're dedicated to simplifying the way golfers
-            access and enjoy the game they love. With just one pass, our members
+            access and enjoy the game they love. With just onepass, our members
             gain access to a network of top-tier golf courses and exclusive
             amenities, all with the ease and convenience of a single platform.
           </Text>

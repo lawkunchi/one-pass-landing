@@ -8,18 +8,17 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 
 const Header: FC = () => {
   return (
-    <Box bg="#fff" minH="80px" borderBottom="1px solid green">
+    <Box bg="#fff" minH="80px" borderBottom="1px solid #16331f">
       <Flex justifyContent="space-between" padding="20px" alignItems="center">
         <Box>
           <Flex alignItems="center">
             <Link href="/">
-              <Image w="100px" src={Logo} alt="One Pass" />
+              <Image w="150px" src={Logo} alt="OnePass Golf" />
             </Link>
-            <Text color="green" fontSize="22px"> One Pass Golf</Text>
           </Flex>
         </Box>
 

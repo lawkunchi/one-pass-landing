@@ -10,8 +10,8 @@ import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 const Faq: FC = () => {
   const faqs = [
     {
-      heading: "One Pass Access",
-      text: "Gain access to a diverse portfolio of partner courses around the globe with just one pass.",
+      heading: "OnePass Access",
+      text: "Gain access to a diverse portfolio of partner courses around the globe with just onepass.",
     },
 
     {

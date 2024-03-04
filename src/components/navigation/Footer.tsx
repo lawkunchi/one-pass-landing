@@ -11,8 +11,7 @@ import {
   LinkProps,
   Flex
 } from "@chakra-ui/react";
-
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -27,12 +26,8 @@ const Footer = () => {
           <Box maxW="300px">
             <Flex alignItems="center" gap={2}>
               <Link href="/">
-                <Image w="100px" src={Logo} alt="One Pass" />
+                <Image w="100px" src={Logo} alt="OnePass Golf" />
               </Link>
-              <Text color="#fff" fontSize="22px">
-                {" "}
-                One Pass Golf
-              </Text>
             </Flex>
           </Box>
           <HStack

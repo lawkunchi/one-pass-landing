@@ -10,6 +10,8 @@ const display = defineStyle({
   fontSize: "76px",
   lineHeight: "1.3 !important",
   color: "#fff",
+  
+
 });
 
 const titleSubHeading = defineStyle({

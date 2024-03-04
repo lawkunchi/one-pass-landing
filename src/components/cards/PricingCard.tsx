@@ -21,7 +21,7 @@ const PricingCard: FC = () => {
               {/* <span>Expensive and exclusive.</span> */}
             </Th>
             <Th>
-              <span>One Pass Golf Club</span>
+              <span>OnePass Golf Club</span>
               <span>Affordable and accessible.</span>
             </Th>
           </Tr>

@@ -9,7 +9,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { BsArrowDownCircle } from "react-icons/bs";
-
+import Banner from "../../assets/images/banner.webp";
+import BannerRight from "../../assets/images/banner-right.webp";
 const HomeBanner: FC = () => {
   return (
     <Flex
@@ -27,7 +28,7 @@ const HomeBanner: FC = () => {
           top="20%"
           transform="perspective(1200px) rotate(-11deg)"
           width="200px"
-          src="https://framerusercontent.com/images/c6ekyYWahKBl8OxmtaNBAx6SU.jpg?scale-down-to=1024"
+          src={Banner}
         />
       </Box>
       <Box textAlign="center" maxWidth="800px">
@@ -79,7 +80,7 @@ const HomeBanner: FC = () => {
           bottom="20%"
           width="200px"
           transform="perspective(1200px) rotate(9deg)"
-          src="https://framerusercontent.com/images/gGY8gUUZusgEhxcM07uHlAMQ04.jpg?scale-down-to=1024"
+          src={BannerRight}
         />
       </Box>
     </Flex>
